@@ -1,6 +1,12 @@
 #!/bin/bash
 # 两个文件/文件夹交换文件名
 
+# Check files
+if [[ $2 == "" ]]; then
+    echo "Error: You must give two files' name."
+    exit 1
+fi
+
 file1=$1
 file2=$2
 
